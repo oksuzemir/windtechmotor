@@ -1,0 +1,158 @@
+#exampleSlider {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  #exampleSlider {
+    border-color: transparent;
+  }
+}
+
+#exampleSlider .MS-content {
+  margin: 15px 5%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+#exampleSlider .MS-content .item {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  border-right: none;
+  width: 30%;
+  margin: 0 25px;
+  border: 1px solid #efefef;
+}
+
+/* multislider eklentileri */
+
+.multislider-item:hover .multislider-img img {
+  filter: saturate(50%);
+}
+
+.multislider-text {
+  white-space: normal;
+}
+
+.multislider-item-content {
+  width: 100%;
+  height: 260px;
+  background-color: #fff;
+  margin-top: -5px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.multislider-button {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+}
+
+.multislider-button a {
+  text-decoration: none;
+  color: #111;
+  padding: 10px 40px;
+  position: relative;
+  box-shadow: 0.3em 0.3em 0 0 #ff633c, inset 0.3em 0.3em 0 0 #ff4e3c;
+  transition: all ease-in-out 0.5s;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.multislider-button a:hover {
+  box-shadow: 0 0 0 0 #695f4b, inset 6em 3.5em 0 0 #ff4e3c;
+  color: #fff;
+
+}
+
+.multislider-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.multislider-title a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #111;
+}
+
+.multislider-img {
+  width: 100%;
+  height: 50%;
+}
+
+.multislider-img img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ;
+}
+
+/* multislider eklentileri */
+
+@media (max-width: 1100px) {
+  #exampleSlider .MS-content .item {
+    width: 47.5%;
+    margin: 0 15px;
+  }
+
+}
+
+@media (max-width: 720px) {
+  #exampleSlider .MS-content .item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .multislider-item-content {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+
+#exampleSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  font-size: 50px;
+  font-weight: 700;
+  outline: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color:#ff4e3c ;
+}
+
+
+
+#exampleSlider .MS-controls button:hover {
+  cursor: pointer;
+}
+
+#exampleSlider .MS-controls .MS-left {
+  left: 10px;
+}
+
+@media (max-width: 992px) {
+  #exampleSlider .MS-controls .MS-left {
+    left: -2px;
+  }
+}
+
+#exampleSlider .MS-controls .MS-right {
+  right: 10px;
+}
+
+@media (max-width: 992px) {
+  #exampleSlider .MS-controls .MS-right {
+    right: -2px;
+  }
+}
